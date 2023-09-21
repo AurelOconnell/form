@@ -8,10 +8,12 @@ import { User } from '../User';
 })
 export class SignUpComponent {
 
+  user: User = new User ('', '','');
+  constructor() {}
+
   onSubmit(): void {
-    console.log('Formulaire envoyé')
+    alert(this.user);
   }
 
-  model: User = new User ('', '','');
 
 }
