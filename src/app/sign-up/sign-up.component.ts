@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from '../User';
 
 @Component({
   selector: 'app-sign-up',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent {
+
+  onSubmit(): void {
+    console.log('Formulaire envoyé')
+  }
+
+  model: User = new User ('', '','');
 
 }
